@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REZI PAMULLA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-RU2fwhN6KkU6wveYz5dXT0b0Kz5If5A5Az4fGS0qx2Qxh0jUFLw6YlkF7qE8JeXO1y0u2QvRhe7Rya+HXfHJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <header>
+        <div class="title-header">
+            <h3>Rezi <span>Pamulla</span></h3>
+        </div>
+    </header>
+
+    <div class="main">
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="Home()"><i class="fa-sharp fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#about" onclick="About()"><i class="fa-solid fa-address-card"></i>About</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+            </ul>
+        </nav>
+
+        <article id="home">
+            <h2 id="judul1">Hello</h2>
+            <div class="logo">
+                <img id="img-artikel" src="img/artikel1.png" alt="">
+            </div>
+            <p id="p-artikel">Website ini berfungsi sebagai wadah untuk memamerkan karya-karya saya, baik dalam hal
+                akademis maupun proyek-proyek yang pernah saya kerjakan. Situs web ini juga berfungsi sebagai media
+                untuk memperkenalkan diri saya secara online kepada orang-orang di luar sana, seperti calon klien atau
+                recruiter yang sedang mencari talenta di bidang IT. <br><br>
+
+                Saya mengembangkan situs web ini dengan menggunakan berbagai teknologi web seperti HTML, CSS, dan
+                JavaScript, serta memanfaatkan beberapa library dan framework seperti Bootstrap dan jQuery untuk
+                mempercepat pengembangan dan meningkatkan kualitas desain. Situs web portfolio ini juga dirancang dengan
+                responsive design agar mudah diakses dari berbagai perangkat, mulai dari desktop hingga smartphone.
+                <br><br>
+
+                Dalam situs web portfolio saya, saya menampilkan informasi tentang diri saya, pengalaman kerja,
+                proyek-proyek yang pernah saya kerjakan, dan portofolio desain grafis. Saya juga menambahkan kontak dan
+                informasi sosial media saya sehingga mudah bagi orang untuk menghubungi saya. <br>
+
+                Situs web portfolio ini merupakan sarana untuk memperlihatkan kemampuan dan potensi saya di bidang
+                teknologi informasi, serta untuk meningkatkan peluang saya untuk mendapatkan proyek atau pekerjaan di
+                masa depan. Saya berharap bahwa dengan adanya situs web portfolio ini, orang akan lebih mudah mengenal
+                dan menghargai karya-karya saya, dan membantu saya mencapai impian saya di bidang IT. <br><br>
+            </p>
+
+            </p>
+        </article>
+
+
+
+        <aside>
+          
+            
+            <div class="aside-items">
+                <img src="img/sertifikat.png" alt="">
+                <a href="">
+                    <h3>Credentials</h3>
+                    <p>Sertifikasi dan penghargaan</p>
+                </a>
+            </div>
+
+            <div class="aside-items">
+                <img src="img/aside3.png" alt="">
+                <a href="">
+                    <h3>Project</h3>
+                    <p>Kumpulan Project yang sudah saya kerjakan</p>
+                </a>
+            </div>
+
+            <div class="aside-items">
+                <img src="img/aside2.png" alt="">
+                <a href="">
+                    <h3>Tech stack</h3>
+                    <p>Teknologi yang saya gunakan dalam mengerjakan proyek saya</p>
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="contact" class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Rezi <span>Pamulla</span></h3>
+
+            <p class="footer-links">
+                <a href="#home" onclick="Home()">Home</a>
+                ·
+                <a href="#">Blog</a>
+                ·
+                <a href="#">Pricing</a>
+                ·
+                <a href="#home" onclick="About()">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#contact">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Rezi Pamulla © 2023</p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p>Contact Us</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+
+    <script>
+        function Home() {
+            document.getElementById("judul1").innerHTML = "Home";
+            document.getElementById("img-artikel").src = "img/artikel1.png";
+            document.getElementById("img-artikel").setAttribute("style", "width: 75%;");
+            document.getElementById("p-artikel").innerHTML = `Website ini berfungsi sebagai wadah untuk memamerkan karya-karya saya, 
+            baik dalam hal akademis maupun proyek-proyek yang pernah saya kerjakan. Situs web ini juga berfungsi sebagai media untuk 
+            memperkenalkan diri saya secara online kepada orang-orang di luar sana, seperti calon klien atau recruiter yang sedang mencari talenta di bidang IT. <br><br> 
+            Saya mengembangkan situs web ini dengan menggunakan berbagai teknologi web seperti HTML, CSS, dan JavaScript, serta memanfaatkan beberapa library dan framework 
+            seperti Bootstrap dan jQuery untuk mempercepat pengembangan dan meningkatkan kualitas desain. Situs web portfolio ini juga dirancang dengan responsive design agar 
+            mudah diakses dari berbagai perangkat, mulai dari desktop hingga smartphone. <br><br> Dalam situs web portfolio saya, saya menampilkan informasi tentang diri saya,
+            pengalaman kerja, proyek-proyek yang pernah saya kerjakan, dan portofolio desain grafis. Saya juga menambahkan kontak dan informasi sosial media saya sehingga mudah 
+            bagi orang untuk menghubungi saya. <br> Situs web portfolio ini merupakan sarana untuk memperlihatkan kemampuan dan potensi saya di bidang teknologi informasi, serta 
+            untuk meningkatkan peluang saya untuk mendapatkan proyek atau pekerjaan di masa depan. Saya berharap bahwa dengan adanya situs web portfolio ini, orang akan lebih mudah
+            mengenal dan menghargai karya-karya saya, dan membantu saya mencapai impian saya di bidang IT. <br><br>`;
+        }
+
+        function About() {
+            document.getElementById("judul1").innerHTML = "About me";
+            document.getElementById("img-artikel").src = "img/profil.png";
+            document.getElementById("img-artikel").setAttribute("style", "width: 200px; border-radius: 50%; border: 3px solid rgb(0, 0, 0);");
+            document.getElementById("p-artikel").innerHTML = `Saya adalah seorang mahasiswa semester 3 di Universitas Pembangunan Jaya jurusan Sistem Informasi. Saya memiliki 
+            minat yang tinggi dalam bidang teknologi informasi, khususnya dalam hal pengembangan perangkat lunak. Saya juga memiliki minat yang tinggi dalam hal desain grafis, 
+            khususnya dalam hal desain web. <br><br> Saya memiliki pengalaman kerja sebagai Software Tester di PT. Bina Nusantara Sejahtera selama 1 tahun. Saya juga memiliki 
+            pengalaman kerja sebagai Web Developer di PT. Bina Nusantara Sejahtera selama 1 tahun. <br><br> Saya memiliki kemampuan yang baik dalam hal pemrograman, khususnya 
+            dalam hal pemrograman web. Saya juga memiliki kemampuan yang baik dalam hal desain grafis, khususnya dalam hal desain web. <br><br> Saya memiliki kemampuan yang baik 
+            dalam hal pemrograman, khususnya dalam hal pemrograman web. Saya juga memiliki kemampuan yang baik dalam hal desain grafis, khususnya dalam hal desain web. <br><br> 
+            Saya memiliki kemampuan yang baik dalam hal pemrograman, khususnya dalam hal pemrograman web. Saya juga memiliki kemampuan yang baik dalam hal desain grafis, khususnya 
+            dalam hal desain web. <br><br> Saya memiliki kemampuan yang baik dalam hal pemrograman, khususnya dalam hal pemrograman web. Saya juga memiliki kemampuan yang baik dalam 
+            hal desain grafis, khususnya dalam hal desain web. <br><br> Saya memiliki kemampuan yang baik dalam hal pemrograman, khususnya dalam hal pemrograman web. Saya juga memiliki 
+            kemampuan yang baik dalam hal desain grafis, khususnya dalam hal desain web. <br><br> Saya memiliki kemampuan yang baik`;
+        }
+
+        
+    </script>
+
+    <script src="https://kit.fontawesome.com/8b0694a704.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
